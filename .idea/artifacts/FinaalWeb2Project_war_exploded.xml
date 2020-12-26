@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="FinaalWeb2Project:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/FinaalWeb2Project_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="FinaalWeb2Project/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="FinaalWeb2Project" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jstl-1.21" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

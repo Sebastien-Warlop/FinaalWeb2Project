@@ -65,8 +65,8 @@ public class BoekDB {
     }
 
     public void updateBoek(String titel, String auteur, String genre, int rating, int aantalPaginas) {
-        Boek oudBoek = vind(titel);                     //mss nog van naam veranderen?
-        if (titel != null /*&& !titel.equals(oudBoek.getTitel())*/) {
+        Boek oudBoek = vind(titel);
+        if (titel != null && !titel.equals(oudBoek.getTitel())) {
             oudBoek.setTitel(titel);
         }
         if (auteur != null && !auteur.equals(oudBoek.getAuteur())) {

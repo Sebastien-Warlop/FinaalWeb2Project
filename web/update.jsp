@@ -39,7 +39,7 @@
         <p>Hier kan u het boek ${param.titel} aanpassen</p>
         <form action="BoekInfo?command=updateBevestig" method="post" novalidate>
             <p><label for="titel">titel *</label>
-            <input type="text" id="titel" name="titel" value="${param.titel}"></p>
+                <input type="text" id="titel" name="titel" value="${param.titel}"></p>
 
             <p><label for="auteur">auteur *</label>
                 <input type="text" id="auteur" name="auteur" value="${param.auteur}"></p>
@@ -50,7 +50,7 @@
             <p><label for="rating">Rating *</label>
                 <input type="number" id="rating" name="rating" value="${param.rating}"></p>
 
-            <p><label for="aantalPaginas">aantalPaginas *</label>
+            <p><label for="aantalPaginas">aantal Pagina's *</label>
                 <input type="number" id="aantalPaginas" name="aantalPaginas" value="${param.aantalPaginas}"></p>
 
             <input type="submit" id="submit" name="submit" value="UPDATE">

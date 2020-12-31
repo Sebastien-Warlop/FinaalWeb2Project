@@ -1,3 +1,4 @@
+import domain.model.Boek;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,9 +27,9 @@ public class TestAddBoek {
     }
 
     @Test
-    public void test_Form_is_shown_again_with_error_messages_If_all_fields_are_empty() {
+    public void test_Form_is_shown_again_with_error_messages_If_all_fields_are_empty_or_have_invalid_value() {
         driver.get(url + "voegToe.jsp");
-        fillOutForm("", "", "", 0,0);
+        fillOutForm("", "", "", -1,-1);
 
         driver.findElement(By.id("submit")).click();
 
@@ -37,6 +38,8 @@ public class TestAddBoek {
         assertTrue(containsWebElementsWithText(lis, "Vul een titel in."));
         assertTrue(containsWebElementsWithText(lis, "Vul een auteur in."));
         assertTrue(containsWebElementsWithText(lis, "Vul een genre in."));
+        assertTrue(containsWebElementsWithText(lis, "Vul een nummer in voor de rating."));
+        assertTrue(containsWebElementsWithText(lis, "Vul een nummer in voor het aantal pagina's."));
     }
 
     @Test
